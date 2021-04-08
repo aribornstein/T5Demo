@@ -48,7 +48,7 @@ if __name__ == '__main__':
     model = TranslationTask(backbone=args.backbone)
 
     # 4. Create the trainer. Run once on data
-    trainer = flash.Trainer(max_epochs=args.max_epochs, precision=16, gpus=args.gpu)
+    trainer = flash.Trainer(max_epochs=args.max_epochs, precision=16, gpus=args.gpus)
 
     # 5. Fine-tune the model
     trainer.finetune(model, datamodule=datamodule)
