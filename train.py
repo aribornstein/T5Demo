@@ -22,7 +22,7 @@ if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('--seed', type=int, default=1234)
     parser.add_argument('--backbone', type=str, default="t5-small")
-    parser.add_argument('--download', type=bool, default=True
+    parser.add_argument('--download', type=bool, default=True)
     parser.add_argument('--train_file', type=str, default="data/wmt_en_ro/train.csv")
     parser.add_argument('--valid_file', type=str, default="data/wmt_en_ro/valid.csv")
     parser.add_argument('--test_file', type=str, default="data/wmt_en_ro/test.csv")
